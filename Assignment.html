@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume Services – Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main" style="position:absolute;left:-9999px;top:auto;">Skip to content</a>
+
+  <header class="site-header" aria-label="Top Navigation">
+    <div class="container nav" role="navigation">
+      <a href="#" class="brand" aria-label="Homepage">
+        <img src="logo.png" alt="logo" class="logo">
+      </a>
+
+      <nav class="navlinks" aria-label="Primary">
+        <a href="#">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="cta">
+        <a class="btn btn-shadow btn-outline" href="#quote">Get a Quote</a>
+        <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('.navlinks')?.classList.toggle('show');"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-wrap">
+        <div class="hero-copy">
+          <h1>Your Resume <br><span class="accent">Deserves A Yes</span> Let’s<br/>Make It Happen</h1>
+          <p class="lead">If your resume isn’t getting responses, it’s time for an upgrade. Get an ATS‑optimized resume crafted by HR experts to help you land more interviews. Our resumes are designed to get your foot in the door and place your name at the top of the shortlist.</p>
+          <div class="cta-row" role="group" aria-label="Primary call to actions">
+            <a class="btn btn-shadow btn-white" href="#packages">Resume Packages</a>
+            <a class="btn btn-shadow btn-outline" href="#contact">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+            <img src="girl.png" alt="image" class="hero-img">
+            <img src="rating.png" alt="rating" class="rating-img">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="container">
+        <p class="kicker">What You Get</p>
+        <h3>You’re Not Just Another Applicant And Your Resume Shouldn’t Look Like One</h3>
+
+        <div class="features" role="list">
+          <article class="card" role="listitem">
+            
+            <img src="ATS.png" alt="ats" class="card-img">
+            <p>Get a professionally written, keyword‑optimized resume that lands in recruiter inboxes—not rejection piles.</p>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="coverLetter.png" alt="ats" class="card-img">
+           
+            <p>Stand out with a cover letter that speaks directly to the role and reflects your strengths.</p>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="linkedin.png" alt="ats" class="card-img">
+            <p>Attract the right eyes, start conversations, and show up in recruiter searches.</p>
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="interview.png" alt="ats" class="card-img">
+            <p>Interview preparation with real HR professionals so you speak clearly, confidently, and convincingly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
